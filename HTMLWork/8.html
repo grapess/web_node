@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Welcome To HTML Page </title>
+	</head>
+	<body>
+		<form> <!-- action="1.html"> -->
+			<table cellpadding="10" cellspacing="10" align="center">
+				<tr>
+					<td> <label for="city1"> Choose City : </label></td>
+					<td>
+						<select name="city1" id="city1">
+							<option value="knl">Karnal</option>
+							<option value="umb">Ambala</option>
+							<option value="ynr">Yamuna Nagar</option>
+							<option value="hs">Hisar</option>
+						</select>
+					</td>					
+				</tr>
+				<tr>
+					<td> <label for="city2"> Choose City : </label></td>
+					<td>
+						<select name="city2" id="city2">
+							<optgroup label="Group 1">
+								<option value="knl">Karnal</option>
+								<option value="umb">Ambala</option>
+							</optgroup>
+							<optgroup label="Group 2">
+								<option value="ynr">Yamuna Nagar</option>
+								<option value="hs">Hisar</option>
+							</optgroup>
+						</select>
+					</td>					
+				</tr>
+				<tr>
+					<td> <label for="city3"> Choose City : </label></td>
+					<td>
+						<select name="city3" id="city3" size="5">
+							<option value="knl">Karnal</option>
+							<option selected value="umb">Ambala</option>
+							<option value="ynr">Yamuna Nagar</option>
+							<option value="hs">Hisar</option>
+						</select>
+					</td>					
+				</tr>
+				<tr>
+					<td> <label for="city4"> Choose City : </label></td>
+					<td>
+						<select name="city4" id="city4" size="5" multiple>
+							<option value="knl">Karnal</option>
+							<option value="umb">Ambala</option>
+							<option value="ynr">Yamuna Nagar</option>
+							<option value="hs">Hisar</option>
+						</select>
+					</td>					
+				</tr>
+				<tr>
+					<td> <label for="photo">Choose Any Photo</label></td>
+					<td> <input type="file" accept="image/jpeg" name="photo" id="photo">
+						<input type="hidden" name="name" value="Mukesh Jamwal">
+					</td>
+				</tr>
+				<tr>
+					<td> <input type="submit" value="Submit Details"> </td>
+					<td> <input type="reset" value="Reset Details"> </td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
