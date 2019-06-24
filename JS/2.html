@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+			function change()
+			{
+				var box = document.getElementById("box");
+				var value = 16777215 * Math.random();
+				value = Math.floor( value );
+				value = value.toString(16);
+				value = "#" + value;
+				//console.log( value );
+				box.style.backgroundColor = value;
+				setTimeout("change()",2500);
+			}
+		</script>
+	</head>
+	<body onload="change()">
+		<div id="box" style="width:300px;height:300px;margin:0 auto;border:6px solid green;">
+		</div>
+	</body>
+</html>

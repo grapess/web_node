@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Welcome To CSS Page </title>
+		<style>
+			#boxshadow
+			{
+				position:relative;
+				box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+				padding: 10px;
+				background: white;
+				width:700px;
+				margin:0 auto;
+			}
+			/*
+				all img tag inside an element which have id attribute
+				value to boxshadow
+			*/
+			#boxshadow img
+			{
+				width:100%;
+				border: 1px solid #8a4419;
+				border-style: inset;
+			}
+			#boxshadow::after 
+			{
+				content: '';
+				position: absolute;
+				z-index: -1; 
+				width: 70%; 
+				left: 15%;
+				height: 100px;
+				bottom: 0;
+				box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);  
+			}
+		</style>		
+	</head>
+	<body>
+		<div id="boxshadow">
+			<img src="images/koala.jpg" alt="Norway" width="600" height="400">
+		</div>
+	</body>
+</html>
