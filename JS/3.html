@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+			var pos = 4;
+			function change()
+			{
+				if( pos == 4 )
+				{
+					pos = 0;
+				}
+				else
+				{
+					pos = 4;
+				}
+				var val = document.getElementById("message");
+				val.style.left = pos + "px";
+			}
+		</script>
+	</head>
+	<body>
+		<h1 id="message" style="position:relative">Grapess Solutions</h1>
+		<script>
+			setInterval( "change()" , 300 );
+		</script>
+	</body>
+</html>

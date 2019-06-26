@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			.show
+			{
+				display:block;
+			}
+			.hide
+			{
+				display:none;
+			}
+		</style>
+		<script>
+			function perform()
+			{
+				var value = document.getElementById("b1").value;
+				if( value == "Show" )
+				{
+					document.getElementById("b1").value = "Hide";
+					document.getElementById("d1").className = "show";
+				}
+				else
+				{
+					document.getElementById("b1").value = "Show"
+					document.getElementById("d1").className = "hide"
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input id="b1"	type="button" onclick="perform()" value="Hide">
+		<div id="d1" style="width:500px;height:500px;border:5px solid red;background-color:green">
+		</div>
+	</body>
+</html>

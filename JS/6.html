@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			span
+			{
+				transition:all 5s;
+			}
+			.first
+			{
+				color:red;
+				font-weight:bolder;
+				font-size:20px;
+			}
+		</style>
+		<script>
+			function perform()
+			{
+				var div = document.getElementById("d1");
+				var spans = div.getElementsByTagName("span");
+				//alert(spans.length);
+				for( i = 0; i < spans.length; i++ )
+				{
+					spans[i].className = "first";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input id="b1"	type="button" onclick="perform()" value="Change">
+		<div id="d1">
+		 Welcome At <span>Grapess Solutions!!!</span>
+		 Welcome At <span>Grapess Solutions!!!</span>
+		 Welcome At <span>Grapess Solutions!!!</span>
+		 Welcome At <span>Grapess Solutions!!!</span>
+		 Welcome At <span>Grapess Solutions!!!</span>
+		 Welcome At <span>Grapess Solutions!!!</span>
+		 Welcome At <span>Grapess Solutions!!!</span>
+		 Welcome At <span>Grapess Solutions!!!</span>
+		 Welcome At <span>Grapess Solutions!!!</span>
+		 Welcome At <span>Grapess Solutions!!!</span>
+		 Welcome At <span>Grapess Solutions!!!</span>
+		 Welcome At <span>Grapess Solutions!!!</span>
+		 Welcome At <span>Grapess Solutions!!!</span>
+		 Welcome At <span>Grapess Solutions!!!</span>
+		 Welcome At <span>Grapess Solutions!!!</span>
+		 Welcome At <span>Grapess Solutions!!!</span>
+		 Welcome At <span>Grapess Solutions!!!</span>
+		</div>
+		<span>Grapess Solutions!!!</span>
+		<span>Grapess Solutions!!!</span>
+	</body>
+</html>

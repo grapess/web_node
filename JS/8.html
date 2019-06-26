@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+			var pos = 0;
+			var left_to_right = true;
+			function perform()
+			{
+				setInterval("change()",50);				
+			}
+			function change()
+			{
+				if( pos == 500 )
+				{
+					left_to_right = false;
+				}
+				if( pos == 0 )
+				{
+					left_to_right = true;
+				}
+				if( left_to_right )
+				{
+					pos++;
+				}
+				else
+				{
+					pos--;
+				}
+				document.getElementById("d1").style.left = pos + "px";
+			}
+		</script>
+	</head>
+	<body>
+		<input id="b1"	type="button" onclick="perform()" value="Move">
+		<div id="d1" style="position:relative;width:500px;height:500px;border:5px solid red;background-color:green">
+		</div>
+	</body>
+</html>

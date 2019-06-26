@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+			var values = ["G","r","a","p","e","s","s"," ","S","o","l","u","t","i","o","n","s"];
+			var index = 0;
+			var i1;
+			function perform()
+			{
+				var value = document.getElementById("b1").value;
+				//alert(value);
+				if( value.indexOf("Start") != -1 )
+				{
+					document.getElementById("b1").value = "Stop Action";
+					i1 = setInterval("change()",500);
+				}
+				else
+				{
+					document.getElementById("b1").value = "Start Action";
+					clearInterval( i1 );
+				}
+			}
+			function change()
+			{
+				if( index < values.length )
+				{
+					document.getElementById("message").innerHTML += values[index];
+					index++;
+				}
+				else
+				{
+					index = 0;
+					document.getElementById("message").innerHTML = "";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1 id="message"></h1>
+		<input id="b1"	type="button" onclick="perform()" value="Start Action">
+	</body>
+</html>
