@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+			var left = 0;
+			var topp = 10;
+			var left_to_right = true;
+			var top_to_bottom = false;
+			var right_to_left = false;			
+			var bottom_to_top = false;
+			function perform()
+			{
+				setInterval("change()",10);				
+			}
+			function change()
+			{
+				if(left_to_right)
+				{
+					left++;
+					if( left == 500 )
+					{
+						left_to_right = false;
+						top_to_bottom = true;
+					}
+				}
+				if(top_to_bottom)
+				{
+					topp++;
+					if( topp == 500 )
+					{
+						top_to_bottom = false;
+						right_to_left = true;
+					}
+				}
+				if( right_to_left )
+				{
+					left--;
+					if( left == 0 )
+					{
+						right_to_left = false;
+						bottom_to_top = true;
+					}
+				}
+				if( bottom_to_top )
+				{
+					topp--;
+					if( topp == 10 )
+					{
+						bottom_to_top = false;
+						left_to_right = true;
+					}
+				}
+				document.getElementById("d1").style.left = left + "px";
+				document.getElementById("d1").style.top = topp + "px";
+			}
+		</script>
+	</head>
+	<body>
+		<input id="b1"	type="button" onclick="perform()" value="Move">
+		<div id="d1" style="position:relative;width:50px;height:50px;border:5px solid red;background-color:green">
+		</div>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+			function show(fun)
+			{
+				function welcome()
+				{
+					console.log(" Before Fun ");
+					fun();
+					console.log(" After Fun ");
+				}
+				return welcome;
+			}
+			function test(){
+				console.log(" Test Function ");
+			}
+		</script>		
+	</head>
+	<body>
+		
+	</body>
+</html>
