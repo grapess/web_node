@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<script>
+			
+			/*function work()
+			{
+				var a = 0;
+				a++;
+				return a;
+				var counter = 0;
+				function plus() {
+					counter += 1;
+				}
+				plus();    
+				return counter;
+			}*/
+			var add = (function () {
+					var counter = 0;
+					return function () 
+					{
+						counter += 1; 
+						return counter
+					}
+				})();
+		</script>		
+	</body>
+</html>

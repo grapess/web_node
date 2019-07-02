@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<script>
+			var person = { name: "Ramesh" , classname: "MCA",
+				show : function()
+				{
+					console.log(" Show Function ");
+					console.log( this.name + "\t" + this.classname);
+				}
+			};
+			console.log(person.name);
+			console.log( person["classname"]);
+			//console.log(person["Name"]);
+			person.show();
+			test = person.show;
+			test();
+		</script>		
+	</body>
+</html>
